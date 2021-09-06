@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use App\Models\ClassRoom;
+use App\Models\ClassRoomVoan;
 
 
 class AddClassRoomController extends Controller
@@ -16,7 +16,7 @@ class AddClassRoomController extends Controller
      */
     public function index()
     {
-        $class_rooms = ClassRoom::all();
+        $class_rooms = ClassRoomVoan::all();
         return view('dashclassroom.index_classroom', compact('class_rooms'));
     }
 
@@ -44,7 +44,7 @@ class AddClassRoomController extends Controller
             'description' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg,gif'
         ]);
-        $class_room = new ClassRoom();
+        $class_room = new ClassRoomVoan();
         $class_room->title = $request->input('title');
         $class_room->description = $request->input('description');
 
@@ -82,7 +82,7 @@ class AddClassRoomController extends Controller
      */
     public function edit($id)
     {
-        $class_room = ClassRoom::find($id);
+        $class_room = ClassRoomVoan::find($id);
         return view('dashclassroom.edit_classroom', compact('class_room'));
 
     }
@@ -102,7 +102,7 @@ class AddClassRoomController extends Controller
             'description' => 'required'
 
         ]);
-        $class_room = ClassRoom::find($id);
+        $class_room = ClassRoomVoan::find($id);
         $class_room->title = $request->input('title');
         $class_room->description = $request->input('description');
 
@@ -133,7 +133,7 @@ class AddClassRoomController extends Controller
     public function destroy($id)
     {
         //
-        $class_room = ClassRoom::find($id);
+        $class_room = ClassRoomVoan::find($id);
         $class_room->delete();
         return redirect(route('dashclassroom.index_classroom'));
     }

@@ -1,0 +1,543 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bar-1 {
+    /* background-color: khaki; */
+    /* overflow: hidden; */
+    /* padding: 10px; */
+}
+.content-people {
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+.content-people .class-cher {
+    width: 75%;
+    margin: auto;
+    font-size: 22px;
+    /* background-color: rgb(255, 213, 213); */
+}
+.content-people .class-cher h2 {
+    padding: 5px 0;
+    border-bottom: 2px solid rgb(189, 202, 230);
+    font-weight: bolder;
+    color: rgb(64, 64, 201);
+}
+.content-people .class-about-cher {
+    width: 75%;
+    margin: auto;
+    /* background-color: rgb(99, 224, 68); */
+}
+.content-people .class-about-cher ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content-people .class-about-cher ul li {
+    display: inline-block;
+}
+.content-people .class-about-cher ul li .cher-img {
+    width: 45px;
+    height: 45px;
+    /* background-color: orange; */
+    float: left;
+}
+.content-people .class-about-cher ul li .cher-img img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+}
+.content-people .class-about-cher ul li .cher-name {
+    /* background-color: coral; */
+    font-size: 22px;
+    margin-top: 10px;
+    width: 600px;
+    margin-left: 80px;
+    /* text-align: center; */
+}
+.content-people .class-mates {
+    width: 75%;
+    margin: auto;
+    /* background-color: rgb(213, 214, 216); */
+    border-bottom: 2px solid rgb(98, 136, 216);
+    margin-top: 50px;
+}
+.content-people .class-mates ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content-people .class-mates ul li {
+    display: inline-block;
+    /* float: right; */
+}
+.content-people .class-mates ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 23px;
+    color: rgb(64, 64, 201);
+    font-weight: bolder;
+}
+.content-people .class-mates ul li:last-child {
+    float: right;
+    /* color: red; */
+}
+
+/* Cllass Students */
+.content-people .class-student {
+    width: 75%;
+    margin: auto;
+    /* background-color: rgb(99, 224, 68); */
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(189, 202, 230);
+}
+.content-people .class-student ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content-people .class-student ul li {
+    display: inline-block;
+}
+.content-people .class-student ul li .student-img {
+    width: 45px;
+    height: 45px;
+    /* background-color: orange; */
+    float: left;
+    padding: 8px;
+}
+.content-people .class-student ul li .student-img img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+}
+.content-people .class-student ul li .student-name {
+    /* background-color: coral; */
+    font-size: 21px;
+    margin-top: 20px;
+    width: 600px;
+    /* text-align: center; */
+    color: black;
+    margin-left: 80px;
+}
+
+/* Question */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+.modal-body .question-box {
+    width: 65%;
+    /* background-color: orange; */
+    float: left;
+}
+.modal-body .question-box {
+    /* background-color: aqua; */
+    margin: auto;
+    /* padding: 20px; */
+    margin-top: 30px;
+}
+.modal-body .question-box label {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.modal-body .question-box input {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(139, 136, 136);
+    background-color: rgb(245, 242, 242);
+}
+
+.btn {
+    background-color: #fff;
+    font-size: 16px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #1e90ff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.modal-body .score-box {
+    width: 35%;
+    /* background-color: aqua; */
+    float: right;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-body .score-box {
+    padding: 10px;
+    margin-top: 20px;
+    /* background-color: orange; */
+}
+.modal-body .score-box label {
+    margin-left: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.modal-body .score-box .select {
+    width: 80%;
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(139, 136, 136);
+    background-color: rgb(245, 242, 242);
+    margin-left: 30px;
+}
+
+/* Media */
+
+@media (min-width: 1200px) {
+    .modal-body .question-box form input {
+        width: 100%;
+        padding: 30px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .content-people .class-cher {
+        width: 75%;
+        margin: auto;
+        font-size: 20px;
+        /* background-color: rgb(255, 213, 213); */
+    }
+    .content-people .class-mates ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        font-size: 20px;
+        color: rgb(64, 64, 201);
+        font-weight: bolder;
+    }
+    .content-people .class-student ul li .student-name {
+        /* background-color: coral; */
+        font-size: 19px;
+        margin-top: 20px;
+        width: 600px;
+        /* text-align: center; */
+        color: black;
+        margin-left: 80px;
+    }
+    .modal-body .question-box form input {
+        width: 100%;
+        padding: 25px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+}
+@media (max-width: 768px) and (max-width: 991.98px) {
+    .content-people .class-cher {
+        width: 75%;
+        margin: auto;
+        font-size: 18px;
+        /* background-color: rgb(255, 213, 213); */
+    }
+    .content-people .class-about-cher ul li .cher-name {
+        /* background-color: coral; */
+        font-size: 19px;
+        margin-top: 10px;
+        width: 600px;
+        margin-left: 80px;
+        /* text-align: center; */
+    }
+    .content-people .class-mates ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        font-size: 19px;
+        color: rgb(64, 64, 201);
+        font-weight: bolder;
+    }
+    .content-people .class-student ul li .student-name {
+        /* background-color: coral; */
+        font-size: 18px;
+        margin-top: 20px;
+        width: 600px;
+        /* text-align: center; */
+        color: black;
+        margin-left: 80px;
+    }
+    .modal-body .question-box form input {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+    .modal-body .score-box .select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        margin: auto;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .content-people .class-cher {
+        width: 75%;
+        margin: auto;
+        font-size: 15px;
+        /* background-color: rgb(255, 213, 213); */
+    }
+    .content-people .class-about-cher ul li .cher-name {
+        /* background-color: coral; */
+        font-size: 17px;
+        margin-top: 10px;
+        width: 600px;
+        margin-left: 80px;
+        /* text-align: center; */
+    }
+    .content-people .class-mates ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        font-size: 20px;
+        color: rgb(64, 64, 201);
+        font-weight: bolder;
+    }
+    .content-people .class-student ul li .student-name {
+        /* background-color: coral; */
+        font-size: 17px;
+        margin-top: 20px;
+        width: 600px;
+        /* text-align: center; */
+        color: black;
+        margin-left: 80px;
+    }
+    .modal-body .question-box form {
+        width: 95%;
+        /* background-color: aqua; */
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 30px;
+    }
+    .modal-body .question-box form input {
+        width: 100%;
+        padding: 18px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+    .btn {
+        background-color: #fff;
+        font-size: 15px;
+        width: 140px;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #1e90ff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .modal-body .score-box .select {
+        width: 90%;
+        padding: 7px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        margin: auto;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+    .modal-body .score-box label {
+        /* margin-left: 30px; */
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        font-size: 18px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .content-people .class-cher {
+        width: 75%;
+        margin: auto;
+        font-size: 13px;
+        /* background-color: rgb(255, 213, 213); */
+    }
+    .content-people .class-about-cher ul li .cher-name {
+        /* background-color: coral; */
+        font-size: 17px;
+        margin-top: 10px;
+        width: 600px;
+        margin-left: 80px;
+        /* text-align: center; */
+    }
+    .content-people .class-mates ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        font-size: 19px;
+        color: rgb(64, 64, 201);
+        font-weight: bolder;
+    }
+    .content-people .class-student ul li .student-name {
+        /* background-color: coral; */
+        font-size: 15px;
+        margin-top: 20px;
+        width: 600px;
+        /* text-align: center; */
+        color: black;
+        margin-left: 80px;
+    }
+    .modal-body .question-box form {
+        width: 95%;
+        /* background-color: aqua; */
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 30px;
+    }
+    .modal-body .question-box form input {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+    .btn {
+        background-color: #fff;
+        font-size: 10px;
+        width: 130px;
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #1e90ff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .modal-body .score-box .select {
+        width: 100%;
+        padding: 6px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        margin: auto;
+        border-bottom: 1px solid rgb(139, 136, 136);
+        background-color: rgb(245, 242, 242);
+    }
+    .modal-body .score-box label {
+        /* margin-left: 30px; */
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        font-size: 15px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,308 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.ag1{
+    background-color:white;
+    height: auto;
+    margin-bottom: 5%;
+}
+.classbox{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    background-color: #DF0E62;
+    margin-top:25px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.subject{
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+}
+.squre{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    /* background-color: white; */
+}
+.squre1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+.scanBox{
+    width: 25px;
+    height: 25px;
+}
+.btnCreate01{
+    width: 150px;
+    height: 50px;
+    background-color: #2d60b3;
+    border-radius: 10;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 7px 1px grey;
+    margin-top: 3%;
+    color: white;
+}
+#create{
+    margin-right: 15%;
+}
+.imgComment{
+    width: 100%;
+    height: 80px;
+    /* background-color: #2d60b3; */
+    border-radius: 10;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 7px 1px grey;
+    margin-top: 3%;
+    color: white;
+    box-sizing: border-box;
+}#imgBox{
+    width: 10%;
+    height: 100%;
+    /* background-color: #2d60b3; */
+    position: relative;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+  }
+.imgProfile{
+    width: 100%;
+    height: 100%;
+    /* background-color: #2d60b3; */
+    border-radius: 50%;
+    
+}
+#teatArea{
+    width: 90%;
+    height: auto;
+    /* background-color:red; */
+    float: left;
+}
+#annouce{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    /* background-color: white; */
+    border: aliceblue;
+    padding-top: 2.5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+}
+#titleBox{
+    width: 65%;
+    height: 100%;
+    /* background-color: #2d60b3; */
+    float: left;
+    position: relative;
+}
+#title01{
+    position:absolute;             
+    top: 50%;               
+    transform: translate(0%, -50%);
+    color: black;
+    font-weight: bold;
+}
+#date{
+    width: 25%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    float: left;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+#dataTitle{
+    position:absolute;             
+    top: 50%;   
+    left: 10%;              
+    transform: translate(-10%, -50%);
+    color: grey; 
+    font-weight: bold;
+}
+.btnDot01{
+    position: absolute;
+    /* background-color: blue; */
+    right: 20px;
+    width: 10%;
+    padding: 11px;
+    float: left;
+    top: 11px;
+}
+.dot01{
+    height: 7px;
+    width: 7px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 4px;
+    line-height: 10px;
+    border-radius: 70%;
+    display: block;
+  }
+
+  /* ===================== */
+@media (min-width:1200px){
+    #teatArea{
+        width: 86%;
+        height: 100%;
+        /* background-color:red; */
+        float: left;
+        padding-top: 0.5%;
+    }
+}
+@media (min-width:992px) and (max-width: 1199.98px){
+    #teatArea{
+        width: 86%;
+        height: 100%;
+        /* background-color:red; */
+        float: left;
+        padding-top: 1%;
+    }
+}
+@media (min-width:768px) and (max-width: 991.98px){
+    #teatArea{
+        width: 86%;
+        height: 100%;
+        /* background-color:red; */
+        float: left;
+        padding-top: 2%;
+    }
+}
+@media (min-width:576px) and (max-width: 767.98px){
+    .btnCreate01{
+        width: 150px;
+        height: 50px;
+        background-color: #2d60b3;
+        border-radius: 10;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 3px 7px 1px grey;
+        margin-top: 3%;
+        color: white;
+    }
+    #create{
+        margin-right: 15%;
+    }
+    .imgComment{
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        margin-top: 3%;
+    }
+    #imgBox{
+        width: 14%;
+        height: 100%;
+    }
+    .circle{
+        height: 40px;
+        width: 40px;
+      }
+    #teatArea{
+        width: 86%;
+        height: 100%;
+        /* background-color:red; */
+        float: left;
+        padding-top: 3.5%;
+    }
+    
+    #titleBox{
+        width: 55%;
+        height: 100%;
+        /* background-color: #2d60b3; */
+        float: left;
+        position: relative;
+    }
+    
+    #date{
+        width: 21%;
+        height: 100%;
+    }
+    .btnDot01{
+        right: -25%;
+        padding: 11px;
+        top: 12px;
+    }
+    .dot01{
+        height: 6px;
+        width: 6px;
+    }
+}
+@media (max-width: 575.98px){
+    .btnCreate01{
+        width: 150px;
+        height: 50px;
+        float: left;
+        margin-left: 8.5%;
+    }
+    .imgComment{
+        width: 83%;
+        height: 80px;
+        margin: auto;
+        margin-top: 3%;
+    }
+    #imgBox{
+        width: 14%;
+        height: 100%;
+    }
+    .circle{
+        height: 40px;
+        width: 40px;
+      }
+    #teatArea{
+        width: 86%;
+        height: 100%;
+        /* background-color:red; */
+        float: left;
+        padding-top: 5%;
+    }
+    
+    #titleBox{
+        width: 55%;
+        height: 100%;
+        /* background-color: #2d60b3; */
+        float: left;
+        position: relative;
+    }
+    
+    #date{
+        width: 21%;
+        height: 100%;
+    }
+    .btnDot01{
+        right: -25%;
+        padding: 11px;
+        top: 15px;
+    }
+    .dot01{
+        height: 5px;
+        width: 5px;
+    }
+    
+}
+
+

@@ -1,0 +1,27 @@
+/* ----------footer------------ */
+.footer{
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+}
+.footer-header{
+    /* background-color: brown; */
+    width: 100%;
+}
+.footer-body{
+    background-color: red;
+}
+.footer-body-box1{
+    background-color: #186C9B;
+    float: left;
+}
+.foot-box{
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    padding: 45px;
+}
+.p-footer{
+    font-size: 20px;
+}

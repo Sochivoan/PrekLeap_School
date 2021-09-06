@@ -10,7 +10,7 @@ use App\Models\UsersRegister;
 use App\Models\Banner;
 use App\Models\ClassTitle;
 use App\Models\ClassTests;
-use App\Models\ClassRoom;
+use App\Models\ClassRoomVoan;
 use App\Models\Benefits;
 use App\Models\AboutBanner;
 use App\Models\Location;
@@ -26,7 +26,7 @@ class MainController extends Controller
         $banners = Banner::all();
         $class_titles = ClassTitle::all();
         $class_tests = ClassTests::all();
-        $class_rooms = ClassRoom::all();
+        $class_rooms = ClassRoomVoan::all();
         $benefits = Benefits::all();
         $class_rooms_titles = ClassRoomTitle::all();
 

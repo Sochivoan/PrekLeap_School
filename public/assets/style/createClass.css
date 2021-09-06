@@ -1,0 +1,307 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #186C9B;
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+}
+.leftBar{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.headerTitle{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+#headerTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.addTo{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-right: 2%;
+    text-align: right;
+}
+#addTo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-top: 2%;
+}
+#btnInfo{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 6.5%;
+}
+
+
+/* FORM CREATE CLASS OR JOIN CLASS */
+.createContainer{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: relative;
+}
+.form{
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px 1px grey;
+}
+.formInput{
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    height: 45px;
+    width: 80%;
+    margin: 10px;
+    border: 1px solid #2d60b3;
+    padding-left: 20px;
+}
+.btnCreate{
+    width: 150px;
+    height: 45px;
+    background-color: lightgreen;
+    border-radius: 10;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 7px 1px grey;
+    margin-top: 5%;
+}
+#create{
+    margin-right: 15%;
+}
+#cancel
+{
+    margin-left: 15px;
+    background-color: #34cfeb;
+}
+/*END  FORM CREATE CLASS OR JOIN CLASS */
+/* ----------footer------------ */
+.footer{
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+}
+.footer-header{
+    /* background-color: brown; */
+    width: 100%;
+}
+.footer-body{
+    background-color: red;
+}
+.footer-body-box1{
+    background-color: #186C9B;
+    float: left;
+}
+.foot-box{
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    padding: 45px;
+}
+.p-footer{
+    font-size: 20px;
+}
+/* ===========CARD============ */
+.CardItem{
+    /* background-color: brown; */
+    /* padding-left: 6%; */
+    padding: 0%;
+    margin: 0%;
+    /* padding-top: 3%; */
+    padding-bottom: 5%;
+}
+.cardContainer{
+    /* width: 100%;
+    margin-top: 5%;
+    
+    padding-left: 4%; */
+    /* background-color: burlywood; */
+    padding: 0%;
+    margin: 0%;
+}
+.card{
+    width: 290px;
+    height: 300px;
+    /* background-color: brown; */
+    padding: 0%;
+    float: left;
+    margin-left: 68px;
+    margin-top: 55px;
+    box-shadow: 0px 0px 10px 1px grey;
+    position: relative;
+}
+.cardHeader{
+    width: 100%;
+    height: 100px;
+    /* background-color: yellow; */
+    background-image: url("../img/prekleab/physic.jpg");
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+    float: left;
+}
+.cardTitle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    float: left;
+}
+#subject{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+#department{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -5px;
+    line-height: 15px;
+}
+.btnDot{
+    position: absolute;
+    right: 5px;
+    width: 10%;
+    padding: 8px;
+    float: left;
+}
+.dot{
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    margin: 4px;
+    line-height: 10px;
+    border-radius: 40%;
+    display: block;
+  }
+.cardBody{
+    width: 100%;
+    height: 130px;
+    border-top: 1px solid grey;
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+    float: left;
+}
+.cardFooter{
+    width: 100%;
+    height: 70px;
+    /* background-color: blue; */
+    border-top: 1px solid grey;
+}
+/* ===========END-CARD============ */
+
+/* ===================== */
+@media (min-width:1200px){
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 6.5%;
+    }
+}
+@media (min-width:992px) and (max-width: 1199.98px){
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 7.5%;
+    }
+}
+@media (max-width: 768px) and (max-width: 991.98px){
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 13.5%;
+    }
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 13.5%;
+    }
+}
+@media (min-width:576px) and (max-width: 767.98px){
+    #headerTitle{
+        font-weight: bold;
+        color: white;
+        font-size: 19px;
+        margin-top: 3%;
+    }
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 17.5%;
+    }
+}
+@media (max-width: 575.98px){
+    #headerTitle{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 3%;
+    }
+    #btnInfo{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20%;
+    }
+}
+
+
+/* ===================== */
+@media (min-width:1200px){
+    
+}
+@media (min-width:992px) and (max-width: 1199.98px){
+   
+}
+@media (max-width: 768px) and (max-width: 991.98px){
+    
+}
+@media (min-width:576px) and (max-width: 767.98px){
+    
+}
+@media (max-width: 575.98px){
+    .card{
+        width: 290px;
+        height: 300px;
+        /* background-color: brown; */
+        padding: 0%;
+        float: left;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px 1px grey;
+    }
+    
+}
+
+

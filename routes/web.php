@@ -15,6 +15,10 @@ use App\Http\Controllers\ApiRestaurantController;
 use App\Http\Controllers\AddOurVisionController;
 use App\Http\Controllers\AddGeneralInforController;
 use App\Http\Controllers\AddClassRoomTitleController;
+use App\Models\Classroom;
+use App\Http\Controllers\UserAuth;
+use App\Http\Controllers\ClassroomController;
+use App\Http\Controllers\QuestionController;
 // use App\Http\Controllers\Controller
 
 
@@ -161,9 +165,46 @@ Route::get('auth/show/{id}', [MainController::class, 'users_show'])->name('auth.
 // Group middleware home page
 Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/admin/dashboard', [MainController::class, 'dashboard']);
+
+    // Rotha route
+
+
     Route::get('/auth/login', [MainController::class, 'login'])->name('auth.login');
     Route::get('/auth/register', [MainController::class, 'register'])->name('auth.register');
 });
+
+    Route::view("login", 'login')->name('login');
+    Route::post("login", [UserAuth::class, 'userLogin']);
+
+    Route::get('classroom', [ClassroomController::class, 'classroom']);
+    Route::get('classroom/{id}', [ClassroomController::class, 'show'])->name('classroom.show');
+
+    Route::post('createclass', [ClassroomController::class, 'createClass'])->name('createClass');
+    Route::view('createclass', 'classroom.createClass')->name('createClassPage');
+
+Route::get('classroom/{id}/classwork', [ClassroomController::class, 'classwork'])->name('classroom.classwork');
+
+Route::get('classroom/classwork/question', [QuestionController::class, 'question'])->name('classroom.classwork.question');
+Route::post('classroom/classwork/qestion', [QuestionController::class, 'createQuestions'])->name('question.store');
+
+
+Route::view("joinclassroom", 'classroom.joinClassroom')->name('joinClassPage');
+Route::post('joinclassroom', [ClassroomController::class, 'joinClass'])->name('joinClassroom');
+
+Route::get('classwork/{id}', [ClassroomController::class , 'classworkDetail'])->name('classwork.detail');
+Route::post('classwork/detail', [ClassroomController::class , 'storeClassworkDetail'])->name('classwork.store');
+
+Route::get('people', [ClassroomController::class , 'people'])->name('people');
+
+
+Route::get('grade', [ClassroomController::class, 'grade'])->name('grade');
+
+Route::get('studentwork/{cid}/{sid?}' , [ClassroomController::class, 'studentWork'])->name('studentwork');
+
+Route::post('scoreinput/{cid?}/{sid?}' , [ClassroomController::class, 'storeScore'])->name('scoreinput');
+
+
+
 
 Route::get('locale/{locale}', function($locale){
     Session::put('locale',$locale);
