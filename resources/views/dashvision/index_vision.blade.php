@@ -33,8 +33,8 @@
                                                         <tr>
                                                             <td>{{ ++$id}}</td>
                                                             <td>{{ $our_vision->title}}</td>
-
-                                                            <td>{{Str::limit($our_vision->description,100)}}</td>
+                                                            <!-- <td>{{Str::limit($our_vision->description,100)}}</td> -->
+                                                            <td>{!! $our_vision->description !!}</td>
                                                             <td>
                                                             <img src="{{ asset ('images/'.$our_vision->image)}}" width="70px" hieght="70px" alt="">
                                                             </td>

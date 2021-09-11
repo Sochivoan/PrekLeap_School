@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use App\Models\Admin;
 use App\Models\UsersRegister;
 use App\Models\Banner;
@@ -29,6 +30,7 @@ class MainController extends Controller
         $class_rooms = ClassRoomVoan::all();
         $benefits = Benefits::all();
         $class_rooms_titles = ClassRoomTitle::all();
+        // $user_profile = UsersRegister::all();
 
         return view('auth.index',compact(
             'banners',
@@ -37,6 +39,7 @@ class MainController extends Controller
             'class_rooms',
             'benefits',
             'class_rooms_titles'
+            // 'user_profile'
         ));
     }
 
@@ -52,6 +55,7 @@ class MainController extends Controller
             'general_infors'
         ));
     }
+
 
     function createClass(){
         return view('auth.createClass');
@@ -136,6 +140,32 @@ class MainController extends Controller
         return redirect(route('auth.user_lists'));
     }
 
+
+    function user_profile($id)
+    {
+        $user_profile = UsersRegister::find($id);
+        return view('auth.user_edit_details', compact('user_profile'));
+    }
+    function users_profile_update(Request $request, $id )
+    {
+         $request->validate([
+            'first_name'=>'required',
+            'last_name'=>'required',
+            'email'=>'required|email|unique:admins',
+            'user_type'=>'required'
+        ]);
+
+       $admin = UsersRegister::find($id);
+        $admin->first_name = $request->first_name;
+        $admin->last_name = $request->last_name;
+        $admin->email = $request->email;
+        $admin->user_type = $request->user_type;
+        $save = $admin->update();
+        return redirect(route(''));
+    }
+
+
+
     function save (Request $request){
         $request->validate([
             'first_name'=>'required',
@@ -151,7 +181,7 @@ class MainController extends Controller
         $admin->first_name = $request->first_name;
         $admin->last_name = $request->last_name;
         $admin->email = $request->email;
-        $admin->user_type = $request->user_type;
+        $admin->user_type =  Str::lower($request->user_type);
         $admin->password = Hash::make($request->password);
         $admin->password_confirm = Hash::make($request->password_confirm);
         $save = $admin->save();
@@ -177,9 +207,17 @@ class MainController extends Controller
 
             if(Hash::check($request->password, $UserInfor->password)){
 
-                $request->session()->put('LoggedUser', $UserInfor->id);
-                return redirect('admin/dashboard');
-
+                session()->put('user_id', $UserInfor->id);
+                session()->put('first_name', $UserInfor->first_name);
+                session()->put('last_name', $UserInfor->last_name);
+                session()->put('email', $UserInfor->email);
+                session()->put('user_type', $UserInfor->user_type);
+                session()->put('password', $UserInfor->password);
+                session()->put('password_confirm', $UserInfor->password_confirm);
+                session()->put('created_at', $UserInfor->created_at);
+                session()->put('updated_at', $UserInfor->updated_at);
+                // return redirect('admin/dashboard');
+                return redirect()->route('auth.index');
             }else{
                 return back()->with('fail','ពាក្យសម្ងាត់មិនត្រឹមត្រូវ');
             }
@@ -188,10 +226,9 @@ class MainController extends Controller
 
 
     function logout(Request $request){
-        if(session()->has('LoggedUser')){
-            session()->pull('LoggedUser');
-            return redirect('/auth/login');
-
+        if(session()->has('user_id')){
+            session()->pull('user_id');
+            return redirect('/');
         }
     }
 

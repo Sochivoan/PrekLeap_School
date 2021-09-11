@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ __('header.title') }}</title>
+    <title>PrekLeap</title>
 
     <link rel="icon" href="{{ asset('images/logoPrekleap_nobg.png')}}">
     <link rel="stylesheet" href="{{ asset('fontawesome-free-5.3.1-web/css/all.min.css') }}">

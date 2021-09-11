@@ -87,172 +87,172 @@
                     </a>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.moeys.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.moeys.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/education.jpg" style="display: inline;" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.moeys.gov.kh/">ក្រសួងអប់រំយុវជននិងកីឡា</a>
+                            <a target="_blank" href="http://www.moeys.gov.kh/">ក្រសួងអប់រំយុវជននិងកីឡា</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://tourismcambodia.org/" target="_blank">
+                            <a target="_blank" href="http://tourismcambodia.org/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/tourism.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://tourismcambodia.org/">ក្រសួងទេសចរណ៍នៃប្រទេសកម្ពុជា</a>
+                            <a target="_blank" href="http://tourismcambodia.org/">ក្រសួងទេសចរណ៍នៃប្រទេសកម្ពុជា</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://information.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://information.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/information.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://information.gov.kh/">Ministry of Information</a>
+                            <a target="_blank" href="http://information.gov.kh/">Ministry of Information</a>
                         </div>
                     </div>
                         <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.maff.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.maff.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/maff.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.maff.gov.kh/">Ministry of Agriculture, Forestry and Fisheries</a>
+                            <a target="_blank" href="http://www.maff.gov.kh/">Ministry of Agriculture, Forestry and Fisheries</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://cambodiameteo.com/" target="_blank">
+                            <a target="_blank" href="http://cambodiameteo.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/water.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://cambodiameteo.com/">Ministry of Water Resource</a>
+                            <a target="_blank" href="http://cambodiameteo.com/">Ministry of Water Resource</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://moe.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://moe.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/moe.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://moe.gov.kh/">Ministry of Environment</a>
+                            <a target="_blank" href="http://moe.gov.kh/">Ministry of Environment</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://mptc.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://mptc.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/mptc.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://mptc.gov.kh/">Ministry of Posts and Telecommunications</a>
+                            <a target="_blank" href="http://mptc.gov.kh/">Ministry of Posts and Telecommunications</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.moc.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.moc.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/commerce.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.moc.gov.kh/">Ministry of Commerce</a>
+                            <a target="_blank" href="http://www.moc.gov.kh/">Ministry of Commerce</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.interior.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.interior.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/interior.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.interior.gov.kh/">Ministry of Interior of Cambodia</a>
+                            <a target="_blank" href="http://www.interior.gov.kh/">Ministry of Interior of Cambodia</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.moh.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.moh.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/moh.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.moh.gov.kh/">Ministry of Health</a>
+                            <a target="_blank" href="http://www.moh.gov.kh/">Ministry of Health</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://mef.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://mef.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/economy.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://mef.gov.kh/">Ministry of Economy and Finance</a>
+                            <a target="_blank" href="http://mef.gov.kh/">Ministry of Economy and Finance</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://mrd.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://mrd.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/mrd.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://mrd.gov.kh/">Ministry of Rural Development</a>
+                            <a target="_blank" href="http://mrd.gov.kh/">Ministry of Rural Development</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://mlvt.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://mlvt.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/mlvt.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://mlvt.gov.kh/">Ministry of Labour and Vocational Training</a>
+                            <a target="_blank" href="http://mlvt.gov.kh/">Ministry of Labour and Vocational Training</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://ccc.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://ccc.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/ccc.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://ccc.gov.kh/">Constitutional Council of Cambodia</a>
+                            <a target="_blank" href="http://ccc.gov.kh/">Constitutional Council of Cambodia</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.cambodiainvestment.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://www.cambodiainvestment.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/cambodiainvestment.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.cambodiainvestment.gov.kh/">CDC</a>
+                            <a target="_blank" href="http://www.cambodiainvestment.gov.kh/">CDC</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://nida.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://nida.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/nida.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://nida.gov.kh/">NiDA</a>
+                            <a target="_blank" href="http://nida.gov.kh/">NiDA</a>
                         </div>
                     </div>
                           <div class="top-stie">
                         <div class="logo">
-                            <a href="http://pressocm.gov.kh/" target="_blank">
+                            <a target="_blank" href="http://pressocm.gov.kh/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/pressocm.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://pressocm.gov.kh/">Press and Quick Reaction Unit</a>
+                            <a target="_blank" href="http://pressocm.gov.kh/">Press and Quick Reaction Unit</a>
                         </div>
                     </div>
                 </div>
@@ -263,112 +263,112 @@
                     </a>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://thmeythmey.com/" target="_blank">
+                            <a target="_blank" href="http://thmeythmey.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/thmeythmey.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://thmeythmey.com/">Thmey Thmey</a>
+                            <a target="_blank" href="http://thmeythmey.com/">Thmey Thmey</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://edition.cnn.com/" target="_blank">
+                            <a target="_blank" href="http://edition.cnn.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/cnn_news.png" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://edition.cnn.com/">CNN</a>
+                            <a target="_blank" href="http://edition.cnn.com/">CNN</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.dap-news.com/index.php" target="_blank">
+                            <a target="_blank" href="http://www.dap-news.com/index.php" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/dap.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.dap-news.com/index.php">DAP NEWS</a>
+                            <a target="_blank" href="http://www.dap-news.com/index.php">DAP NEWS</a>
                         </div>
                     </div>
                         <div class="top-stie">
                         <div class="logo">
-                            <a href="http://postkhmer.com/" target="_blank">
+                            <a target="_blank" href="http://postkhmer.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/postkhmer.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://postkhmer.com/">POST KHMER</a>
+                            <a target="_blank" href="http://postkhmer.com/">POST KHMER</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.phnompenhpost.com/" target="_blank">
+                            <a target="_blank" href="http://www.phnompenhpost.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/logo_ppp.png" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.phnompenhpost.com/">PHNOM PENH POST</a>
+                            <a target="_blank" href="http://www.phnompenhpost.com/">PHNOM PENH POST</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.rfa.org/" target="_blank">
+                            <a target="_blank" href="http://www.rfa.org/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/rfa.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.rfa.org/">RADIO FREE ASIA</a>
+                            <a target="_blank" href="http://www.rfa.org/">RADIO FREE ASIA</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.voacambodia.com/" target="_blank">
+                            <a target="_blank" href="http://www.voacambodia.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/khmer.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.voacambodia.com/">VOICE OF AMERICA</a>
+                            <a target="_blank" href="http://www.voacambodia.com/">VOICE OF AMERICA</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://kohsantepheapdaily.com.kh/default" target="_blank">
+                            <a target="_blank" href="http://kohsantepheapdaily.com.kh/default" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/koh.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://kohsantepheapdaily.com.kh/default">KOH SANTEPHEAP DAILY</a>
+                            <a target="_blank" href="http://kohsantepheapdaily.com.kh/default">KOH SANTEPHEAP DAILY</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://www.camnews.org/" target="_blank">
+                            <a target="_blank" href="http://www.camnews.org/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/camnews.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://www.camnews.org/">CAMNEWS</a>
+                            <a target="_blank" href="http://www.camnews.org/">CAMNEWS</a>
                         </div>
                     </div>
                     <div class="top-stie">
                         <div class="logo">
-                            <a href="http://km.rfi.fr/" target="_blank">
+                            <a target="_blank" href="http://km.rfi.fr/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/RFI.png" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://km.rfi.fr/">RFI</a>
+                            <a target="_blank" href="http://km.rfi.fr/">RFI</a>
                         </div>
                     </div>
                        <div class="top-stie">
                         <div class="logo">
-                            <a href="http://vodhotnews.com/" target="_blank">
+                            <a target="_blank" href="http://vodhotnews.com/" target="_blank">
                                 <img src="http://www.norton-u.com/images/top-site/thumb/1-vodhotnews.jpg" alt="">
                             </a>
                         </div>
                         <div class="top-stie-text">
-                            <a href="http://vodhotnews.com/">VOD</a>
+                            <a target="_blank" href="http://vodhotnews.com/">VOD</a>
                         </div>
                     </div>
                 </div>

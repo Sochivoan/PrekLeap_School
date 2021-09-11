@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>CreateClass</title>
 
-      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Siemreap&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hanuman&family=Siemreap&display=swap" rel="stylesheet">
@@ -78,7 +78,7 @@ body {
      font-weight: 600;
      color: #ffff;
 }
-.addTo a p{
+{
      font-family: "Hanuman", serif;
 }
 </style>
@@ -144,7 +144,7 @@ body {
                         <!-- <p id="addTo">+</p> -->
                     </div>
                 </div>
-            </div>
+          </div>
     </div>
 </body>
 </html>

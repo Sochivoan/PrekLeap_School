@@ -1,9 +1,6 @@
 
-
 @extends('layout.template')
-
 @section('form')
-
     <div class="container">
         <div class="row">
             <div class="col-lg-6 content-frm">
@@ -69,9 +66,9 @@
                                 <label class="col-sm-3 form-control-label text-xs-right">អ្នកប្រើប្រាស់</label>
                                         <div class="col-sm-8">
                                             <select class="form-control" name="user_type" id="user_type">
-                                                <option selected>Open this select menu</option>
-                                                <option>Teacher</option>
-                                                <option>Student</option>
+                                                <option selected>ជ្រើសរើស...</option>
+                                                <option>គ្រូ</option>
+                                                <option>សិស្ស</option>
                                             </select>
                                         </div>
                                 </label>
@@ -93,7 +90,7 @@
                     </div>
                 </div>
 
-                    <p>ពាក្យសម្ងាត់ត្រូវតែមាន យ៉ាងហោចណាស់ 6 - 12 តួអក្សរ </p>
+                    <p>ពាក្យសម្ងាត់ត្រូវតែមាន យ៉ាងហោចណាស់ 8 - 12 តួអក្សរ </p>
 
                 <div class="form-group row">
                     <label for="c_password" class="col-sm-3 col-form-label">

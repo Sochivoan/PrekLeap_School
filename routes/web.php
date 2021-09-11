@@ -35,7 +35,7 @@ use App\Http\Controllers\QuestionController;
 
 Route::get('/', function () {
     return view('dashboardpage/index');
-});
+})->name('auth.index');
 
 Route::prefix('admin')->group(function(){
   Route::get('/', [Admin\Auth\LoginController::class, 'loginForm']);
@@ -160,19 +160,22 @@ Route::get('/auth/edit/{id}', [MainController::class, 'users_edit'])->name('auth
 Route::post('/auth/update/{id}', [MainController::class, 'users_update'])->name('auth.update');
 Route::get('auth/show/{id}', [MainController::class, 'users_show'])->name('auth.show');
 
-
+// Route::get('/auth/edit/{id}', [MainController::class, ''])->name('auth.edit');
+Route::get('/auth/edit/{id}', [MainController::class, 'user_profile'])->name('auth.edit');
+Route::post('/auth/update/{id}', [MainController::class, 'users_profile_update'])->name('auth.update');
 
 // Group middleware home page
 Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/admin/dashboard', [MainController::class, 'dashboard']);
 
-    // Rotha route
-
+    // Route::get('/admin/dashboard', [MainController::class, 'dashboard']);
 
     Route::get('/auth/login', [MainController::class, 'login'])->name('auth.login');
     Route::get('/auth/register', [MainController::class, 'register'])->name('auth.register');
 });
 
+
+    // Rotha route
     Route::view("login", 'login')->name('login');
     Route::post("login", [UserAuth::class, 'userLogin']);
 
@@ -182,26 +185,24 @@ Route::group(['middleware'=>['AuthCheck']], function(){
     Route::post('createclass', [ClassroomController::class, 'createClass'])->name('createClass');
     Route::view('createclass', 'classroom.createClass')->name('createClassPage');
 
-Route::get('classroom/{id}/classwork', [ClassroomController::class, 'classwork'])->name('classroom.classwork');
+    Route::get('classroom/{id}/classwork', [ClassroomController::class, 'classwork'])->name('classroom.classwork');
 
-Route::get('classroom/classwork/question', [QuestionController::class, 'question'])->name('classroom.classwork.question');
-Route::post('classroom/classwork/qestion', [QuestionController::class, 'createQuestions'])->name('question.store');
-
-
-Route::view("joinclassroom", 'classroom.joinClassroom')->name('joinClassPage');
-Route::post('joinclassroom', [ClassroomController::class, 'joinClass'])->name('joinClassroom');
-
-Route::get('classwork/{id}', [ClassroomController::class , 'classworkDetail'])->name('classwork.detail');
-Route::post('classwork/detail', [ClassroomController::class , 'storeClassworkDetail'])->name('classwork.store');
-
-Route::get('people', [ClassroomController::class , 'people'])->name('people');
+    Route::get('classroom/classwork/question', [QuestionController::class, 'question'])->name('classroom.classwork.question');
+    Route::post('classroom/classwork/qestion', [QuestionController::class, 'createQuestions'])->name('question.store');
 
 
-Route::get('grade', [ClassroomController::class, 'grade'])->name('grade');
+    Route::view("joinclassroom", 'classroom.joinClassroom')->name('joinClassPage');
+    Route::post('joinclassroom', [ClassroomController::class, 'joinClass'])->name('joinClassroom');
 
-Route::get('studentwork/{cid}/{sid?}' , [ClassroomController::class, 'studentWork'])->name('studentwork');
+    Route::get('classwork/{id}', [ClassroomController::class , 'classworkDetail'])->name('classwork.detail');
+    Route::post('classwork/detail', [ClassroomController::class , 'storeClassworkDetail'])->name('classwork.store');
 
-Route::post('scoreinput/{cid?}/{sid?}' , [ClassroomController::class, 'storeScore'])->name('scoreinput');
+    Route::get('people', [ClassroomController::class , 'people'])->name('people');
+    Route::get('grade', [ClassroomController::class, 'grade'])->name('grade');
+
+    Route::get('studentwork/{cid}/{sid?}' , [ClassroomController::class, 'studentWork'])->name('studentwork');
+
+    Route::post('scoreinput/{cid?}/{sid?}' , [ClassroomController::class, 'storeScore'])->name('scoreinput');
 
 
 
@@ -213,7 +214,7 @@ Route::get('locale/{locale}', function($locale){
 
 
 // Route::get('/api/map-marker', 'Api\ApiRestaurantController@mapMarker');
-Route::get('/auth/index', [MainController::class, 'mapMarker']);
+// Route::get('/auth/index', [MainController::class, 'mapMarker']);
 
 
 

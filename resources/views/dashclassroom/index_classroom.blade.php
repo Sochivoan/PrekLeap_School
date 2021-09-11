@@ -33,7 +33,6 @@
                                                         <tr>
                                                             <td>{{ ++$id}}</td>
                                                             <td>{{ $class_room->title}}</td>
-
                                                             <td>@php echo html_entity_decode(substr($class_room->description,100, 150),ENT_COMPAT) @endphp</td>
                                                                 <td>
                                                                     <img src="{{ asset('images/'.$class_room->image)}}" width="70px" hieght="70px" alt="">

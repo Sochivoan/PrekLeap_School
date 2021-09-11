@@ -31,7 +31,8 @@
                                                         <tr>
                                                             <td>{{ ++$id}}</td>
                                                             <td>{{ $about_us->title}}</td>
-                                                            <td>@php echo html_entity_decode(substr($about_us->description, 0, 150),ENT_COMPAT) @endphp..</td>
+
+                                                               <td>{!! $about_us->description !!}</td>
                                                             <td>
                                                             <img src="{{ asset ('images/'.$about_us->image)}}" width="70px" hieght="70px" alt="">
                                                             </td>

@@ -15,7 +15,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>CreateClass</title>
 
+    <style>
+        .createContainer h1{
+            font-family: "Siemreap", sans-serif;
+        }
+        .container-fluid input{
+            font-family: "Siemreap", sans-serif;
+        }
+        .container-fluid form button{
+             font-family: "Siemreap", sans-serif;
+             font-size: 19px
+        }
+        .container-fluid form a
+        {
+            font-family: "Siemreap", sans-serif;
+            color: #fff;
+             font-size: 19px;
+             background-color: red;
+             width: 150px;
+             height: 45px;
+             padding:12px
+        }
 
+    </style>
 </head>
 <body>
 
@@ -44,10 +66,10 @@
                                 <input class="formInput" type="text" placeholder="មុខវិជ្ជា" name="class_subject"><br/>
                                 <input class="formInput" type="text" placeholder="លេខថ្នាក់រៀន" name="class_room"><br/>
                                 <button class="btnCreate" id="submit" type="submit">បង្កើត</button>
-                                <a href="{{ route('login') }}" class="btn"  id="cancel" style="width: 150px; height: 45px; padding-top:12px">បិទ</a>
-                                </div>   
+                                <a href="{{ route('login') }}" class="btn"  id="">បិទ</a>
+                                </div>
                         </form>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>

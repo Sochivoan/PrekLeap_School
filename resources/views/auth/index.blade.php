@@ -31,31 +31,9 @@
             </div>
         </div>
         <!-- <div class="contianer"> -->
-        <div class="row">
-             @foreach($class_tests as $class_test)
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 tests-box">
-                <div class="img-box">
-                    <img src="{{ asset('images/'.$class_test->image)}}" alt="">
-                </div>
-                <div class="text-box">
-                    <h1>{{ $class_test->courses_name}}</h1>
-                    <p><?php echo html_entity_decode($class_test->courses_description, ENT_COMPAT);?></p>
-                    <a href="#" class="btn-more">{{ $class_test->link_to_class}}</a>
-                </div>
-            </div>
-             @endforeach
-        </div>
+
         <!-- </div> -->
-        <div class="row">
-            @foreach($class_rooms_titles as $rooms_title)
-            <div class="col-xl-12 content-classroom">
-                <div class="title-classroom">
-                    <h3 class="classroom-text">{{ $rooms_title->title }}</h3>
-                    <p><?php echo html_entity_decode($rooms_title->description, ENT_COMPAT);?></p>
-                </div>
-            </div>
-            @endforeach
-        </div>
+
         <div class="container">
             <div class="row">
             @foreach($class_rooms as $class_room)
@@ -71,6 +49,16 @@
                 </div>
             @endforeach
             </div>
+        </div>
+          <div class="row">
+            @foreach($class_rooms_titles as $rooms_title)
+            <div class="col-xl-12 content-classroom">
+                <div class="title-classroom">
+                    <h3 class="classroom-text">{{ $rooms_title->title }}</h3>
+                    <p><?php echo html_entity_decode($rooms_title->description, ENT_COMPAT);?></p>
+                </div>
+            </div>
+            @endforeach
         </div>
         <div class="conatainer">
             <div class="row">
@@ -88,11 +76,11 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-12 btn-classroom">
+    <!-- <div class="col-xl-12 btn-classroom">
         <center>
             <button type="button" class="btn btn-primary btn-sm">@lang('home.to_class_menu')</button>
         </center>
-    </div>
+    </div> -->
 </div>
 
 <!-- scripts -->
